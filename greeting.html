@@ -21,23 +21,23 @@
            }
 
            ReactDOM.render(
-             <Greeting />, document.getElementById('app')
-           );
-        </script>
-        <script type="text/babel">
-        class DisplayMessage extends React.Component {
-  render() {
-    return (
-      <div>
-        <p>Great Job {this.props.name}<p>
-      </div>
-    );
-  }
-}
+        <Greeting />, document.getElementById('app')
+      );
+      </script>
+      <script type="text/babel">
+      class Assignment extends React.Component {
+           render() {
+             return (
+               <div>
+                 <p>Great job creating a React component {this.props.name}!</p>
+               </div>
+             );
+           }
+         }
 
-ReactDOM.render(
-  <DisplayMessage name="Alexander!" />, document.getElementById('app2')
-);
-        </script>
+         ReactDOM.render(
+      <Assignment name="Alexander" />, document.getElementById('app2')
+    );
+    </script>
  </body>
 </html>
